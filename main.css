@@ -60,7 +60,6 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
 #quickSneakers {
     /* background-color: red; */
     background: linear-gradient(to right, rgb(216, 87, 108), red);
@@ -115,6 +114,12 @@ p {
     color: red;
     border-radius: 7%;
     border: none;
+    transition-duration: 0.4s;
+}
+
+#buyButton:hover {
+    background-color: rgb(165, 18, 18);
+    color: white;
 }
 
 .springSummer {
@@ -122,4 +127,37 @@ p {
     font-size: 15px;
     padding-top: 0px;
     margin-top: 0px;
+}
+
+@media (max-width: 960px) {
+    .recShoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quickSneakers {
+        /* background-color: red; */
+        background: linear-gradient(to right, rgb(216, 87, 108), red);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        /* margin: 175px; */
+        line-height: 2;
+        align-items: baseline;
+    }
+
+    #coverseImg {
+        width: 220px;
+        height: auto;
+        display: flex;
+        /* margin: 50px 15px 50px 175px; */
+    }
+
+    #quickSneakText {
+        /* padding-right: 175px; */
+        display: flex;
+        align-content: center;
+    }
+
 }
