@@ -1,0 +1,125 @@
+body {
+    margin: 15px 0px 5px 0px;
+}
+
+#navLogo {
+    width: 50px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    color: rgb(239, 91, 91);
+}
+
+/* .navDesign {
+    display: flex;
+    align-content: space-evenly;
+} */
+
+a {
+    text-decoration: none;
+    color: rgb(239, 111, 111);
+}
+
+button {
+    padding: 10px 25px 10px 25px;
+    font-size: large;
+}
+
+#coverseImg {
+    width: 550px;
+    margin: 50px 15px 50px 175px;
+}
+
+.backToShoes {
+    padding: 10px;
+    margin: 20px 15px 0px 175px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.productInfo {
+    color: red;
+    display: flex;
+    border-bottom: rgb(225, 144, 144) solid;
+    margin: 25px 175px 0px 175px;
+}
+
+.excitingTopic {
+    margin: 25px 175px 50px 175px;
+    color: rgb(44, 41, 41)
+}
+
+h4,
+h5,
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+#quickSneakers {
+    /* background-color: red; */
+    background: linear-gradient(to right, rgb(216, 87, 108), red);
+    color: white;
+    display: flex;
+    /* margin: 175px; */
+    line-height: 2;
+    display: flex;
+    align-content: space-around;
+}
+
+#quickSneakText {
+    padding-right: 175px;
+}
+
+.recShoesTitle {
+    background: rgb(242, 206, 212);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.recShoes {
+    background-color: red;
+    background: linear-gradient(to right, rgb(216, 87, 108), red);
+    color: white;
+    display: flex;
+    font-size: 22px;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    line-height: 0px;
+    align-content: space-evenly;
+}
+
+.recShoesImg {
+    width: 275px;
+    padding: 40px 30px 0px 30px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#buyButton {
+    color: red;
+    border-radius: 7%;
+    border: none;
+}
+
+.springSummer {
+    color: rgb(165, 18, 18);
+    font-size: 15px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
