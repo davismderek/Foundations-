@@ -1,10 +1,5 @@
 body {
-    margin: 15px 0px 5px 0px;
-}
-
-#navLogo {
-    width: 50px;
-    padding: 10px;
+    margin: 0px 0px 5px 0px;
 }
 
 nav {
@@ -12,12 +7,21 @@ nav {
     text-decoration: none;
     justify-content: space-between;
     color: rgb(239, 91, 91);
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
 }
 
-/* .navDesign {
+.navLogo {
+    width: 50px;
+    padding: 10px;
+}
+
+.navDesign {
     display: flex;
-    align-content: space-evenly;
-} */
+    align-items: center;
+    gap: 10px;
+}
 
 a {
     text-decoration: none;
@@ -29,17 +33,18 @@ button {
     font-size: large;
 }
 
-#coverseImg {
-    width: 550px;
-    margin: 50px 15px 50px 175px;
-}
-
 .backToShoes {
     padding: 10px;
-    margin: 20px 15px 0px 175px;
+    /* margin: 20px 15px 0px 175px; */
     background: none;
     border: none;
     color: white;
+}
+
+#converseImg {
+    width: 550px;
+    /* width: 80%; */
+    /* margin: 50px 15px 50px 175px; */
 }
 
 .productInfo {
@@ -47,11 +52,7 @@ button {
     display: flex;
     border-bottom: rgb(225, 144, 144) solid;
     margin: 25px 175px 0px 175px;
-}
-
-.excitingTopic {
-    margin: 25px 175px 50px 175px;
-    color: rgb(44, 41, 41)
+    justify-content: space-between;
 }
 
 h4,
@@ -60,19 +61,49 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-#quickSneakers {
-    /* background-color: red; */
+.quickSneakContainer {
     background: linear-gradient(to right, rgb(216, 87, 108), red);
     color: white;
     display: flex;
-    /* margin: 175px; */
     line-height: 2;
-    display: flex;
     align-content: space-around;
+    padding: 50px 175px;
+    gap: 20px;
 }
 
-#quickSneakText {
-    padding-right: 175px;
+.backToShoes:hover {
+    color: rgb(174, 167, 167)
+}
+
+.quickSneak {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quickSneakCTA {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#buyButton {
+    color: rgb(182, 43, 43);
+    border-radius: 3px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    transition-duration: 0.4s;
+}
+
+#buyButton:hover {
+    background-color: rgb(165, 18, 18);
+    color: white;
+}
+
+.excitingTopic {
+    margin: 25px 175px 50px 175px;
+    color: rgb(44, 41, 41)
 }
 
 .recShoesTitle {
@@ -110,23 +141,25 @@ p {
     justify-content: space-around;
 }
 
-#buyButton {
-    color: red;
-    border-radius: 7%;
-    border: none;
-    transition-duration: 0.4s;
-}
-
-#buyButton:hover {
-    background-color: rgb(165, 18, 18);
-    color: white;
-}
-
 .springSummer {
     color: rgb(165, 18, 18);
     font-size: 15px;
     padding-top: 0px;
     margin-top: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 25px;
+    font-size: 13px;
+    word-spacing: 5px;
+}
+
+#footerMenu {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 960px) {
@@ -136,28 +169,72 @@ p {
         align-items: center;
     }
 
-    #quickSneakers {
-        /* background-color: red; */
-        background: linear-gradient(to right, rgb(216, 87, 108), red);
-        color: white;
+    .quickSneak {
         display: flex;
         flex-direction: column;
-        /* margin: 175px; */
-        line-height: 2;
-        align-items: baseline;
+        align-items: center;
+        padding: 0px;
     }
 
-    #coverseImg {
-        width: 220px;
+    #converseImg {
+        /* width: 220px; */
         height: auto;
-        display: flex;
-        /* margin: 50px 15px 50px 175px; */
+
     }
 
     #quickSneakText {
-        /* padding-right: 175px; */
         display: flex;
-        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .navDesign {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #converseImg {
+        width: 80%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .quickSneakContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .quickSneak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        padding: 0px;
+    }
+
+    #quickSneakText {
+        margin: 15px;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .quickSneakCTA {
+        margin: 15px;
+    }
+
+    .productInfo {
+        margin: 15px;
+    }
+
+    .excitingTopic {
+        margin: 15px;
+        justify-content: space-evenly;
     }
 
 }
